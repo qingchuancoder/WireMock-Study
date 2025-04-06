@@ -1,6 +1,32 @@
 {
   "mappings": [
     {
+      "id": "d266bc52-b927-4c3b-98d0-8f5d0b9b41a9",
+      "name": "v1_user",
+      "request": {
+        "url": "/v1/user",
+        "method": "POST",
+        "bodyPatterns": [
+          {
+            "equalToJson": "{\"id\":null,\"name\":\"test\",\"age\":18}",
+            "ignoreArrayOrder": true,
+            "ignoreExtraElements": true
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "body": "{\"success\":true,\"code\":200,\"msg\":\"Success\",\"data\":{\"id\":1,\"name\":\"test\",\"age\":18}}",
+        "headers": {
+          "Keep-Alive": "timeout=60",
+          "Date": "Sun, 06 Apr 2025 07:39:37 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "d266bc52-b927-4c3b-98d0-8f5d0b9b41a9",
+      "persistent": true
+    },
+    {
       "id": "1f966072-ad9d-4c50-b7d0-b925190b99fe",
       "name": "v1_user",
       "request": {
@@ -17,8 +43,7 @@
         }
       },
       "uuid": "1f966072-ad9d-4c50-b7d0-b925190b99fe",
-      "persistent": true,
-      "insertionIndex": 1
+      "persistent": true
     },
     {
       "id": "3292733d-49ad-4833-865a-4795f5ad0b35",
@@ -44,35 +69,7 @@
         }
       },
       "uuid": "3292733d-49ad-4833-865a-4795f5ad0b35",
-      "persistent": true,
-      "insertionIndex": 5
-    },
-    {
-      "id": "d266bc52-b927-4c3b-98d0-8f5d0b9b41a9",
-      "name": "v1_user",
-      "request": {
-        "url": "/v1/user",
-        "method": "POST",
-        "bodyPatterns": [
-          {
-            "equalToJson": "{\"id\":null,\"name\":\"test\",\"age\":18}",
-            "ignoreArrayOrder": true,
-            "ignoreExtraElements": true
-          }
-        ]
-      },
-      "response": {
-        "status": 200,
-        "body": "{\"success\":true,\"code\":200,\"msg\":\"Success\",\"data\":{\"id\":1,\"name\":\"test\",\"age\":18}}",
-        "headers": {
-          "Keep-Alive": "timeout=60",
-          "Date": "Sun, 06 Apr 2025 07:39:37 GMT",
-          "Content-Type": "application/json"
-        }
-      },
-      "uuid": "d266bc52-b927-4c3b-98d0-8f5d0b9b41a9",
-      "persistent": true,
-      "insertionIndex": 4
+      "persistent": true
     },
     {
       "id": "4d6ad753-b4e3-48ec-8def-ae8f816cc587",
@@ -91,8 +88,7 @@
         }
       },
       "uuid": "4d6ad753-b4e3-48ec-8def-ae8f816cc587",
-      "persistent": true,
-      "insertionIndex": 3
+      "persistent": true
     },
     {
       "id": "d73a996e-afa1-4343-a764-f95fd74fe47c",
@@ -110,8 +106,7 @@
         }
       },
       "uuid": "d73a996e-afa1-4343-a764-f95fd74fe47c",
-      "persistent": true,
-      "insertionIndex": 2
+      "persistent": true
     }
   ]
 }
