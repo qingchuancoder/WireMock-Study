@@ -1,0 +1,117 @@
+{
+  "mappings": [
+    {
+      "id": "1f966072-ad9d-4c50-b7d0-b925190b99fe",
+      "name": "v1_user",
+      "request": {
+        "url": "/v1/user?id=1",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "body": "{\"success\":true,\"code\":200,\"msg\":\"Success\",\"data\":{\"id\":1,\"name\":\"test\",\"age\":18}}",
+        "headers": {
+          "Keep-Alive": "timeout=60",
+          "Date": "Sun, 06 Apr 2025 07:39:37 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "1f966072-ad9d-4c50-b7d0-b925190b99fe",
+      "persistent": true,
+      "insertionIndex": 1
+    },
+    {
+      "id": "3292733d-49ad-4833-865a-4795f5ad0b35",
+      "name": "v1_user",
+      "request": {
+        "url": "/v1/user",
+        "method": "PUT",
+        "bodyPatterns": [
+          {
+            "equalToJson": "{\"id\":1,\"name\":null,\"age\":null}",
+            "ignoreArrayOrder": true,
+            "ignoreExtraElements": true
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "body": "{\"success\":true,\"code\":200,\"msg\":\"Success\",\"data\":{\"id\":1,\"name\":\"updated\",\"age\":null}}",
+        "headers": {
+          "Keep-Alive": "timeout=60",
+          "Date": "Sun, 06 Apr 2025 07:39:36 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "3292733d-49ad-4833-865a-4795f5ad0b35",
+      "persistent": true,
+      "insertionIndex": 5
+    },
+    {
+      "id": "d266bc52-b927-4c3b-98d0-8f5d0b9b41a9",
+      "name": "v1_user",
+      "request": {
+        "url": "/v1/user",
+        "method": "POST",
+        "bodyPatterns": [
+          {
+            "equalToJson": "{\"id\":null,\"name\":\"test\",\"age\":18}",
+            "ignoreArrayOrder": true,
+            "ignoreExtraElements": true
+          }
+        ]
+      },
+      "response": {
+        "status": 200,
+        "body": "{\"success\":true,\"code\":200,\"msg\":\"Success\",\"data\":{\"id\":1,\"name\":\"test\",\"age\":18}}",
+        "headers": {
+          "Keep-Alive": "timeout=60",
+          "Date": "Sun, 06 Apr 2025 07:39:37 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "d266bc52-b927-4c3b-98d0-8f5d0b9b41a9",
+      "persistent": true,
+      "insertionIndex": 4
+    },
+    {
+      "id": "4d6ad753-b4e3-48ec-8def-ae8f816cc587",
+      "name": "v1_user",
+      "request": {
+        "url": "/v1/user?id=1",
+        "method": "DELETE"
+      },
+      "response": {
+        "status": 200,
+        "body": "{\"success\":true,\"code\":200,\"msg\":\"Success\",\"data\":null}",
+        "headers": {
+          "Keep-Alive": "timeout=60",
+          "Date": "Sun, 06 Apr 2025 07:39:37 GMT",
+          "Content-Type": "application/json"
+        }
+      },
+      "uuid": "4d6ad753-b4e3-48ec-8def-ae8f816cc587",
+      "persistent": true,
+      "insertionIndex": 3
+    },
+    {
+      "id": "d73a996e-afa1-4343-a764-f95fd74fe47c",
+      "name": "v1_users",
+      "request": {
+        "url": "/v1/users",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "base64Body": "eyJpZCI6MSwibmFtZSI6InRlc3QxIiwiYWdlIjoxfQp7ImlkIjoyLCJuYW1lIjoidGVzdDIiLCJhZ2UiOjJ9CnsiaWQiOjMsIm5hbWUiOiJ0ZXN0MyIsImFnZSI6M30KeyJpZCI6NCwibmFtZSI6InRlc3Q0IiwiYWdlIjo0fQp7ImlkIjo1LCJuYW1lIjoidGVzdDUiLCJhZ2UiOjV9CnsiaWQiOjYsIm5hbWUiOiJ0ZXN0NiIsImFnZSI6Nn0KeyJpZCI6NywibmFtZSI6InRlc3Q3IiwiYWdlIjo3fQp7ImlkIjo4LCJuYW1lIjoidGVzdDgiLCJhZ2UiOjh9CnsiaWQiOjksIm5hbWUiOiJ0ZXN0OSIsImFnZSI6OX0KeyJpZCI6MTAsIm5hbWUiOiJ0ZXN0MTAiLCJhZ2UiOjEwfQp7ImlkIjoxMSwibmFtZSI6InRlc3QxMSIsImFnZSI6MTF9CnsiaWQiOjEyLCJuYW1lIjoidGVzdDEyIiwiYWdlIjoxMn0KeyJpZCI6MTMsIm5hbWUiOiJ0ZXN0MTMiLCJhZ2UiOjEzfQp7ImlkIjoxNCwibmFtZSI6InRlc3QxNCIsImFnZSI6MTR9CnsiaWQiOjE1LCJuYW1lIjoidGVzdDE1IiwiYWdlIjoxNX0KeyJpZCI6MTYsIm5hbWUiOiJ0ZXN0MTYiLCJhZ2UiOjE2fQp7ImlkIjoxNywibmFtZSI6InRlc3QxNyIsImFnZSI6MTd9CnsiaWQiOjE4LCJuYW1lIjoidGVzdDE4IiwiYWdlIjoxOH0K",
+        "headers": {
+          "Keep-Alive": "timeout=60",
+          "Date": "Sun, 06 Apr 2025 07:39:37 GMT"
+        }
+      },
+      "uuid": "d73a996e-afa1-4343-a764-f95fd74fe47c",
+      "persistent": true,
+      "insertionIndex": 2
+    }
+  ]
+}

@@ -21,6 +21,7 @@
         <maven.compiler.target>${java.version}</maven.compiler.target>
         <spring-cloud.version>2024.0.1</spring-cloud.version>
         <data-model.version>0.0.1-SNAPSHOT</data-model.version>
+        <wiremock-spring-boot.version>3.9.0</wiremock-spring-boot.version>
     </properties>
     <dependencies>
         <dependency>
@@ -44,6 +45,11 @@
             <groupId>org.example</groupId>
             <artifactId>DataModel</artifactId>
             <version>${data-model.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.wiremock.integrations</groupId>
+            <artifactId>wiremock-spring-boot</artifactId>
+            <version>${wiremock-spring-boot.version}</version>
         </dependency>
     </dependencies>
     <dependencyManagement>
